@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from "react";
 
 export const AppStateContext = createContext({});
 
-export function AppProvider ({ children }) {
+export function AppProvider({ children }) {
   const value = useState({});
 
   return (
@@ -13,7 +13,7 @@ export function AppProvider ({ children }) {
   );
 }
 
-export function useAppState () {
+export function useAppState() {
   const context = useContext(AppStateContext);
 
   if (!context) {
